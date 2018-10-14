@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/rootView"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,7 +15,6 @@
         android:layout_margin="10dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp"
         android:text="Who is the 44th President of the United States?"
         android:textAlignment="center"
         android:textColor="@android:color/holo_purple"

@@ -49,5 +49,14 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.correct_answer).setBackground(getResources().getDrawable(R.drawable.choice_background_correct));
             }
         });
+
+        findViewById(R.id.rootView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.incorrect_answer_1).setBackground(getResources().getDrawable(R.drawable.choice_background));
+                findViewById(R.id.incorrect_answer_2).setBackground(getResources().getDrawable(R.drawable.choice_background));
+                findViewById(R.id.correct_answer).setBackground(getResources().getDrawable(R.drawable.choice_background));
+            }
+        });
     }
 }

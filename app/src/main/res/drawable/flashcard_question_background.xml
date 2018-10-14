@@ -3,7 +3,9 @@
     android:shape="rectangle" >
     <corners android:radius="40dp" />
     <stroke android:width="5dp" android:color="#FFABFB" />
-    <solid android:color="#FFD9FC"/>
+    <gradient
+        android:startColor="#FFD9FC" android:endColor="#FFF0FE"
+        android:angle="90"/>
     <padding android:left="20dp" android:top="20dp"
         android:right="20dp" android:bottom="20dp" />
 </shape>
