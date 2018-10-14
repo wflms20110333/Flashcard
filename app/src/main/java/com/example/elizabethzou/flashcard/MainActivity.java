@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.flashcard_question).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findViewById(R.id.flashcard_question).setVisibility(View.INVISIBLE);
+                v.setVisibility(View.INVISIBLE);
                 findViewById(R.id.flashcard_answer).setVisibility(View.VISIBLE);
             }
         });
@@ -23,7 +23,30 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 findViewById(R.id.flashcard_question).setVisibility(View.VISIBLE);
-                findViewById(R.id.flashcard_answer).setVisibility(View.INVISIBLE);
+                v.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        findViewById(R.id.correct_answer).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setBackground(getResources().getDrawable(R.drawable.choice_background_correct));
+            }
+        });
+
+        findViewById(R.id.incorrect_answer_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setBackground(getResources().getDrawable(R.drawable.choice_background_incorrect));
+                findViewById(R.id.correct_answer).setBackground(getResources().getDrawable(R.drawable.choice_background_correct));
+            }
+        });
+
+        findViewById(R.id.incorrect_answer_2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setBackground(getResources().getDrawable(R.drawable.choice_background_incorrect));
+                findViewById(R.id.correct_answer).setBackground(getResources().getDrawable(R.drawable.choice_background_correct));
             }
         });
     }
