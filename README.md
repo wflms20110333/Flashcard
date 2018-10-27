@@ -6,7 +6,7 @@
 A simple flashcard application that allows users to create custom flashcards with multiple choice selection.
 
 ### App Walk-though
-<img src="https://media.giphy.com/media/1AIAJOunkxEeczbscT/giphy.gif" width=200><br>
+<img src="https://media.giphy.com/media/4T3QW59Twj7UeaIqzq/giphy.gif" width=200><br>
 
 ## Required
 - [x] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
