@@ -5,7 +5,7 @@
 ### App Description
 A simple flashcard application that allows users to create custom flashcards with multiple choice selection; created flashcards are saved and can be edited or deleted.
 
-### App Walk-though
+### App Walk-through
 <img src="https://media.giphy.com/media/2eKfCbicbBv55WKNGO/giphy.gif" width=200><br>
 
 ## Required
@@ -23,7 +23,7 @@ A simple flashcard application that allows users to create custom flashcards wit
 ### App Description
 A simple flashcard application that allows users to create custom flashcards with multiple choice selection.
 
-### App Walk-though
+### App Walk-through
 <img src="https://media.giphy.com/media/4T3QW59Twj7UeaIqzq/giphy.gif" width=200><br>
 
 ## Required
@@ -45,7 +45,7 @@ A simple flashcard application that allows users to create custom flashcards wit
 ### App Description
 A simple flashcard application.
 
-### App Walk-though
+### App Walk-through
 <img src="https://media.giphy.com/media/fsclG8GmoKbP3jQsog/giphy.gif" width=200><br>
 
 ## Required
