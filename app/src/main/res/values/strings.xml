@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Flashcard</string>
     <string name="title_activity_add_card">AddCardActivity</string>
+    <string name="title_activity_empty_state">EmptyStateActivity</string>
 </resources>
