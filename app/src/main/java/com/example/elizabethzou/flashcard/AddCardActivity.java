@@ -14,7 +14,9 @@ public class AddCardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_card);
 
-        if (getIntent().getBooleanExtra("edit", false)) {
+        final boolean edit = getIntent().getBooleanExtra("edit", false);
+
+        if (edit) {
             String question = getIntent().getStringExtra("question");
             String correct_answer = getIntent().getStringExtra("correct_answer");
             String incorrect_answer_1 = getIntent().getStringExtra("incorrect_answer_1");
@@ -30,6 +32,10 @@ public class AddCardActivity extends AppCompatActivity {
             public void onClick(View v) {
                 setResult(RESULT_CANCELED);
                 finish();
+                if (edit)
+                    overridePendingTransition(R.anim.right_in, R.anim.left_out);
+                else
+                    overridePendingTransition(R.anim.left_in, R.anim.right_out);
             }
         });
 
@@ -50,6 +56,10 @@ public class AddCardActivity extends AppCompatActivity {
                     data.putExtra("incorrect_answer_2", incorrect_answer_2);
                     setResult(RESULT_OK, data);
                     finish();
+                    if (edit)
+                        overridePendingTransition(R.anim.right_in, R.anim.left_out);
+                    else
+                        overridePendingTransition(R.anim.left_in, R.anim.right_out);
                 }
             }
         });
